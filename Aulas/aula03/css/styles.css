@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Início do estilos ( aparecerá no css ) */
 .container {
   background: #DDD;
   padding: 20px;
@@ -9,6 +11,7 @@
   text-align: center;
 }
 
+/*! Início do estilo do container-bottom ( aparecerá no css ) */
 .container-bottom {
   background-color: #DDD;
   text-align: center;
