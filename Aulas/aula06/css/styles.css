@@ -30,4 +30,28 @@ h2:hover {
   color: blue;
 }
 
+.esp-menor {
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px red;
+}
+
+.esp-medio {
+  padding: 15px;
+  margin: 15px;
+  border: solid 1px blue;
+}
+
+.esp-maior {
+  padding: 25px;
+  margin: 25px;
+  border: solid 1px green;
+}
+
+.esp-maior-ainda {
+  padding: 50px;
+  margin: 50px;
+  border: solid 1px gold;
+}
+
 /*# sourceMappingURL=styles.css.map */
