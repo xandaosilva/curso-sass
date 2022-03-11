@@ -76,4 +76,14 @@ h2:hover {
   border: solid 1px black;
 }
 
+.fonte-grande {
+  font-size: 25px;
+  color: red;
+}
+
+.fonte-pequena {
+  font-size: 5px;
+  color: blue;
+}
+
 /*# sourceMappingURL=styles.css.map */

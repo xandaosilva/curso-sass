@@ -2,6 +2,7 @@
 @import 'button'
 @import 'mixins'
 @import 'plugins'
+@import 'functions'
 
 .p-esp
     @include special
@@ -42,3 +43,11 @@ h2
 .container-maior
     width: 25rem * 2
     @include custom-border(solid, black)
+
+.fonte-grande
+    font-size: 25px
+    color: text-color(25)
+
+.fonte-pequena
+    font-size: 5px
+    color: text-color(5)
