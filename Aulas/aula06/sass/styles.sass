@@ -37,17 +37,21 @@ h2
     @extend %font-pattern
 
 .container-menor
-    width: 100px * 2
-    @include custom-border(solid, black)
+    width: 100px * 4
+    //@include custom-border(solid, black)
+    border: custom-border-function()
 
 .container-maior
     width: 25rem * 2
-    @include custom-border(solid, black)
+    //@include custom-border(solid, black)
+    border: custom-border-function(2)
 
 .fonte-grande
     font-size: 25px
     color: text-color(25)
+    border: custom-border-function(3)
 
 .fonte-pequena
     font-size: 5px
     color: text-color(5)
+    border: custom-border-function(400)

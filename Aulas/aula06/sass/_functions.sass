@@ -8,3 +8,16 @@
         $color: blue
     
     @return $color
+
+@function custom-border-function($variation: 1)
+
+    $border: none
+
+    @if $variation == 1
+        $border: solid 1px red
+    @else if $variation == 2
+        $border: solid 2px green
+    @else 
+        $border: dotted 3px gold
+    
+    @return $border
