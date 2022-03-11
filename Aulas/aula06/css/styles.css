@@ -6,6 +6,12 @@
   margin: 10px;
 }
 
+.esp-maior-ainda, .esp-maior, .esp-medio, .esp-menor {
+  font-size: 2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
 .p-esp {
   color: red;
   background-color: yellow;
