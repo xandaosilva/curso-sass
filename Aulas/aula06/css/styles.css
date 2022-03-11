@@ -66,4 +66,14 @@ h2:hover {
   border: solid 1px gold;
 }
 
+.container-menor {
+  width: 200px;
+  border: solid 1px black;
+}
+
+.container-maior {
+  width: 50rem;
+  border: solid 1px black;
+}
+
 /*# sourceMappingURL=styles.css.map */
