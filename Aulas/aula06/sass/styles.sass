@@ -68,3 +68,11 @@ h2
     width: custom-width($division: 5)
     padding: 20px
     background-color: calc-function(5, 5)
+
+$fonts: 40px, 60px, 100px
+
+@each $font in $fonts
+    .title-#{$font}
+        font-size: $font
+        line-height: $font * 1.2
+     
