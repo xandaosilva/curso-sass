@@ -21,3 +21,6 @@
         $border: dotted 3px gold
     
     @return $border
+
+@function custom-width($width: 200px, $division: 2)
+    @return calc($width/$division)
