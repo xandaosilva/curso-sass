@@ -28,4 +28,5 @@
     @return $border
 
 @function custom-width($width: 200px, $division: 2)
+    @debug "O valor da divisão é #{calc($width/$division)}"
     @return calc($width/$division)
