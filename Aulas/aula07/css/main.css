@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 #navbar {
   padding: 15px;
   border-bottom: solid 2px #FFF;
@@ -47,6 +51,22 @@ a {
 }
 #navbar ul li a:hover {
   color: #DDD;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: orange;
+  color: #DDD;
+  border-radius: 10px;
+  border: solid 1px orange;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.5s;
+  display: block;
+  margin: 15px auto;
+}
+.btn:hover {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=main.css.map */
