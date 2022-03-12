@@ -1,3 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 
+body {
+  background-color: #222;
+}
+
+main {
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 2rem;
+  color: #DDD;
+}
+
+p {
+  font-size: 16px;
+  color: #CCC;
+}
 
 /*# sourceMappingURL=main.css.map */
