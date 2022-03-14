@@ -1,12 +1,41 @@
 @use 'sass:color'
+@use 'sass:list'
 
 $color-adjust: color.adjust(#6B717F, $red: 25)
 $color-adjust-2: color.adjust(#6B717F, $red: 25, $blue: 110)
 $color-scale: color.scale($color-adjust-2, $lightness: -40%)
 $color-scale-2: color.scale($color-adjust-2, $lightness: 40%)
+$lista: 10px, 20px, 30px
+$lista2: 60px, 70px, 80px, 90px, 100px
+$lista: list.append($lista, 40px)
 
 @debug color.blue($color-adjust)
 @debug color.blue($color-adjust-2)
+@debug $lista
+@debug list.index($lista, 20px)
+@debug list.index($lista, 50px)
+
+@if list.index($lista, 10px) == 1
+    $lista: list.append($lista, 50px)
+
+@debug $lista
+
+$lista3: list.join($lista, $lista2)
+
+@debug $lista3
+
+@debug list.length($lista)
+@debug list.length($lista2)
+@debug list.length($lista3)
+
+@debug list.nth($lista, 3)
+@debug list.nth($lista2, 3)
+@debug list.nth($lista3, 3)
+
+$font-size-title: list.nth($lista3, 4)
+
+h1
+    font-size: $font-size-title
 
 .color-1
     color: $color-adjust
