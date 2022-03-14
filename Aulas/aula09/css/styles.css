@@ -1,5 +1,10 @@
 h1 {
+  transition: 1s;
+}
+
+h1 {
   font-size: 40px;
+  border: solid 2px red;
 }
 
 .color-1 {
