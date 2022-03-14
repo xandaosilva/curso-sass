@@ -3,6 +3,7 @@
 @use 'sass:map'
 @use 'sass:math'
 @use 'sass:meta'
+@use 'sass:string'
 
 $color-adjust: color.adjust(#6B717F, $red: 25)
 $color-adjust-2: color.adjust(#6B717F, $red: 25, $blue: 110)
@@ -16,6 +17,7 @@ $n: ('border': solid 2px red, 'transition': 1s)
 $x: map.merge($m, $n)
 $pi: math.$pi
 $a: 1, 2, 3, 4, 5
+$frase: 'O rato roeu a roupa do rei de Roma'
 
 @mixin teste
     margin: 0
@@ -73,6 +75,14 @@ $border-title: map.get($x, 'border')
 @debug meta.type-of($a)
 @debug meta.type-of("teste")
 @debug meta.type-of(#FFF)
+
+@debug string.index($frase, 'rei')
+@debug string.index($frase, 'Brasil')
+@debug string.length($frase)
+@debug string.to-lower-case($frase)
+@debug string.to-upper-case($frase)
+@debug string.unique-id()
+@debug string.unique-id()
 
 @if map.has-key($x, 'transition')
     h1
