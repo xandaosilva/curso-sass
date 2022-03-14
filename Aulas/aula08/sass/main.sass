@@ -1,3 +1,5 @@
+@use 'sass:map'
+
 $a: 10
 
 $str: "Roboto"
@@ -9,6 +11,8 @@ $var2: "Teste"
 $h: hidden
 
 $list: 10, 20, 30
+
+$font-weights: ("regular": 400, "bold": 700, "black": 900)
 
 @debug $a
 @debug $a + 12
@@ -34,9 +38,16 @@ h1
 h2
     display: $h
 
+h3
+    font-weight: map.get($font-weights, "black")
+
 p
     font-family: $nome-da-fonte + " " + $var1
 
 @each $font in $list
     .p-#{$font}
         font-size: $font + px
+
+@each $key, $value in $font-weights
+    .p-#{$key}
+        font-weight: $value
