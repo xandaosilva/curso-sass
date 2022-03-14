@@ -1,6 +1,7 @@
 @use 'sass:color'
 @use 'sass:list'
 @use 'sass:map'
+@use 'sass:math'
 
 $color-adjust: color.adjust(#6B717F, $red: 25)
 $color-adjust-2: color.adjust(#6B717F, $red: 25, $blue: 110)
@@ -12,6 +13,8 @@ $lista: list.append($lista, 40px)
 $m: ('font': 3px, 'color': blue, 'bold': false)
 $n: ('border': solid 2px red, 'transition': 1s)
 $x: map.merge($m, $n)
+$pi: math.$pi
+$a: 1, 2, 3, 4, 5
 
 @debug color.blue($color-adjust)
 @debug color.blue($color-adjust-2)
@@ -46,6 +49,15 @@ $border-title: map.get($x, 'border')
 @debug $border-title
 @debug map.has-key($x, 'transition')
 @debug map.has-key($x, 'teste')
+
+@debug $pi
+@debug math.ceil($pi)
+@debug math.floor($pi)
+
+@debug math.max($a ...)
+@debug math.min($a ...)
+
+@debug math.random()
 
 @if map.has-key($x, 'transition')
     h1
