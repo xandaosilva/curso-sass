@@ -1,5 +1,26 @@
 $a: 10
 
+$str: "Roboto"
+$str2: Roboto
+$nome-da-fonte: "Open"
+$var1: "Sans"
+$var2: "Teste"
+
+$h: hidden
+
 @debug $a
 @debug $a + 12
 @debug $a + 20px
+
+@debug $str == $str2
+@debug $nome-da-fonte + " " + $var1
+@debug $nome-da-fonte + " " + $var2
+
+h1
+    font-family: "#{$nome-da-fonte} #{$var2}"
+
+p
+    font-family: $nome-da-fonte + " " + $var1
+
+h2
+    display: $h
