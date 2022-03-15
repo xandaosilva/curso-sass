@@ -31,4 +31,28 @@ ul {
   list-style: none;
 }
 
+.header {
+  background-color: #15161D;
+}
+.header-top {
+  background-color: #1E1F29;
+  color: #FFF;
+}
+.header-top-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+.header-top-container span {
+  margin-right: 1rem;
+}
+.header-top-container i {
+  margin-right: 0.3rem;
+}
+.header-top-container a {
+  color: #FFF;
+}
+
 /*# sourceMappingURL=app.css.map */
