@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6{
     border-width: 20px 10px;
     border-radius: 15px;
     margin: 50px;
+    display: block;
 }
 
 .paragrafo-box{
