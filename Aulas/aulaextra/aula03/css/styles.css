@@ -19,3 +19,7 @@
 .p-float{
     color: #000;
 }
+
+.clear{
+    clear: both;
+}
