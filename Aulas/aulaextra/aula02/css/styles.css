@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: black;
+    margin: 0;
 }
 
 /* Adicionando comentários */
@@ -12,6 +12,18 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
-p{
-    color: cyan;
+.boxmodel{
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    padding: 20px;
+    border: solid 3px lightcoral;
+    border-width: 20px 10px;
+    border-radius: 15px;
+    margin: 50px;
+}
+
+.paragrafo-box{
+    color: lightcoral;
+    margin: 0;
 }
