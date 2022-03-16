@@ -28,3 +28,37 @@ h1, h2, h3, h4, h5, h6{
     color: lightcoral;
     margin: 0;
 }
+
+.div-position{
+    width: 100px;
+    height: 100px;
+    background-color: darkcyan;
+    color: white;
+}
+
+.stastic{
+    position: static;
+}
+
+.relative{
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.absolut{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sticky{
+    position: sticky;
+    top: 50;
+}
