@@ -6,10 +6,19 @@
   background-color: #FAFAFA;
 }
 
+a {
+  text-decoration: none;
+}
+
 #main-container {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
+}
+@media (max-width: 450px) {
+  #main-container {
+    margin-top: 0;
+  }
 }
 #main-container #banner-container, #main-container #form-container {
   flex: 1 1 0;
@@ -18,28 +27,46 @@
 #main-container #banner-container {
   text-align: right;
 }
+@media (max-width: 450px) {
+  #main-container #banner-container {
+    display: none;
+  }
+}
 #main-container #banner-container img {
   margin-right: -15px;
 }
 #main-container #form-container {
   text-align: center;
 }
-#main-container #form-container #form-box, #main-container #form-container #register-container {
+@media (max-width: 450px) {
+  #main-container #form-container {
+    width: 100%;
+    border: none;
+  }
+}
+#main-container #form-container #form-box {
   background-color: #FFF;
   border: solid 1px #DBDBDB;
   width: 350px;
   margin-top: 30px;
 }
-#main-container #form-container #form-box #logo-insta, #main-container #form-container #register-container #logo-insta {
+@media (max-width: 450px) {
+  #main-container #form-container #form-box {
+    margin-top: 0;
+    width: 100%;
+    border: none;
+  }
+}
+#main-container #form-container #form-box #logo-insta {
   width: 175px;
   height: 51px;
   margin: 30px auto 12px;
   background-color: #FFF;
 }
-#main-container #form-container #form-box #login-form, #main-container #form-container #register-container #login-form {
+#main-container #form-container #form-box #login-form {
   margin-top: 20px;
 }
-#main-container #form-container #form-box #login-form input, #main-container #form-container #register-container #login-form input {
+#main-container #form-container #form-box #login-form input {
   display: block;
   font-size: 12px;
   padding: 12px 9px;
@@ -49,7 +76,7 @@
   width: 268px;
   margin: 5px auto;
 }
-#main-container #form-container #form-box #login-form input[type=submit], #main-container #form-container #register-container #login-form input[type=submit] {
+#main-container #form-container #form-box #login-form input[type=submit] {
   background-color: #B2DFFC;
   color: #FFF;
   margin-top: 15px;
@@ -61,15 +88,15 @@
   font-weight: bold;
   cursor: pointer;
 }
-#main-container #form-container #form-box .separator, #main-container #form-container #register-container .separator {
+#main-container #form-container #form-box .separator {
   position: relative;
 }
-#main-container #form-container #form-box .separator .line, #main-container #form-container #register-container .separator .line {
+#main-container #form-container #form-box .separator .line {
   border-top: solid 1px #DBDBDB;
   width: 268px;
   margin: 25px auto 35px;
 }
-#main-container #form-container #form-box .separator span, #main-container #form-container #register-container .separator span {
+#main-container #form-container #form-box .separator span {
   position: absolute;
   text-transform: uppercase;
   color: #BBB;
@@ -80,37 +107,46 @@
   font-size: 14px;
   font-weight: bold;
 }
-#main-container #form-container #form-box #other-links #facebook-login, #main-container #form-container #register-container #other-links #facebook-login {
+#main-container #form-container #form-box #other-links #facebook-login {
   margin-bottom: 25px;
 }
-#main-container #form-container #form-box #other-links #facebook-login a, #main-container #form-container #register-container #other-links #facebook-login a {
-  text-decoration: none;
+#main-container #form-container #form-box #other-links #facebook-login a {
   color: #385185;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#main-container #form-container #form-box #other-links #facebook-login a img, #main-container #form-container #register-container #other-links #facebook-login a img {
+#main-container #form-container #form-box #other-links #facebook-login a img {
   width: 16px;
   height: 16px;
   margin-right: 8px;
 }
-#main-container #form-container #form-box #other-links #facebook-login a span, #main-container #form-container #register-container #other-links #facebook-login a span {
+#main-container #form-container #form-box #other-links #facebook-login a span {
   font-weight: bold;
   font-size: 13px;
   margin-top: 1px;
 }
-#main-container #form-container #form-box #other-links #forgot-pass, #main-container #form-container #register-container #other-links #forgot-pass {
+#main-container #form-container #form-box #other-links #forgot-pass {
   margin-bottom: 20px;
   font-size: 12px;
 }
-#main-container #form-container #form-box #other-links #forgot-pass a, #main-container #form-container #register-container #other-links #forgot-pass a {
-  text-decoration: none;
+#main-container #form-container #form-box #other-links #forgot-pass a {
   color: #373799;
 }
 #main-container #form-container #register-container {
+  background-color: #FFF;
+  border: 1px solid #DBDBDB;
+  width: 350px;
   margin-top: 10px;
   padding: 25px;
+  margin-top: 10px;
+  padding: 25px;
+}
+@media (max-width: 450px) {
+  #main-container #form-container #register-container {
+    width: 100%;
+    border: none;
+  }
 }
 #main-container #form-container #register-container p {
   font-size: 14px;
@@ -119,18 +155,20 @@
 #main-container #form-container #register-container a {
   color: #4A95F6;
   font-weight: bold;
-  text-decoration: none;
 }
 #main-container #form-container #get-app-container {
   text-align: center;
   width: 350px;
 }
+@media (max-width: 450px) {
+  #main-container #form-container #get-app-container {
+    width: 100%;
+    border: none;
+  }
+}
 #main-container #form-container #get-app-container p {
   margin: 20px 0;
   font-size: 13px;
-}
-#main-container #form-container #get-app-container a {
-  text-decoration: none;
 }
 #main-container #form-container #get-app-container a img {
   width: 136px;
@@ -142,6 +180,12 @@ footer {
   width: 1000px;
   margin: 50px auto;
 }
+@media (max-width: 450px) {
+  footer {
+    width: 90%;
+    text-align: center;
+  }
+}
 footer nav #footer-links {
   list-style: none;
 }
@@ -150,8 +194,12 @@ footer nav #footer-links li {
   text-transform: uppercase;
   margin-right: 10px;
 }
+@media (max-width: 450px) {
+  footer nav #footer-links li {
+    margin-bottom: 10px;
+  }
+}
 footer nav #footer-links li a {
-  text-decoration: none;
   color: #00376B;
   font-size: 12px;
   font-weight: bold;
