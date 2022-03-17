@@ -25,25 +25,89 @@
         text-align: center
 
         #form-box
+            background-color: #FFF
+            border: solid 1px #DBDBDB
+            width: 350px
+            margin-top: 30px
+
             #logo-insta
+                width: 175px
+                height: 51px
+                margin: 30px auto 12px
+                background-color: #FFF
 
             #login-form
+                margin-top: 20px
+
                 input
+                    display: block
+                    font-size: 12px
+                    padding: 12px 9px
+                    background-color: #FAFAFA
+                    border: solid 1px #DBDBDB
+                    border-radius: 3px
+                    width: 268px
+                    margin: 5px auto
+
+                    &[type='submit']
+                        background-color: #B2DFFC
+                        color: #FFF
+                        margin-top: 15px
+                        border-radius: 5px
+                        height: 30px
+                        border-color: #B2DFFC
+                        font-size: 13px
+                        padding: 0
+                        font-weight: bold
+                        cursor: pointer
 
             .separator
+                position: relative
+
                 .line
+                    border-top: solid 1px #DBDBDB
+                    width: 268px
+                    margin: 25px auto 35px
 
                 span
+                    position: absolute
+                    text-transform: uppercase
+                    color: #BBB
+                    width: 50px
+                    top: -6px
+                    left: 50%
+                    margin-left: -25px
+                    font-size: 14px
+                    font-weight: bold
 
             #other-links
                 #facebook-login
+                    margin-bottom: 25px
+
                     a
+                        text-decoration: none
+                        color: #385185
+                        display: flex
+                        align-items: center
+                        justify-content: center
+
                         img
+                            width: 16px
+                            height: 16px
+                            margin-right: 8px
 
                         span
+                            font-weight: bold
+                            font-size: 13px
+                            margin-top: 1px
 
                 #forgot-pass
+                    margin-bottom: 20px
+                    font-size: 12px
+
                     a
+                        text-decoration: none
+                        color: #373799
 
         #register-container
             p

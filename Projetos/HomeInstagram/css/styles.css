@@ -24,5 +24,89 @@
 #main-container #form-container {
   text-align: center;
 }
+#main-container #form-container #form-box {
+  background-color: #FFF;
+  border: solid 1px #DBDBDB;
+  width: 350px;
+  margin-top: 30px;
+}
+#main-container #form-container #form-box #logo-insta {
+  width: 175px;
+  height: 51px;
+  margin: 30px auto 12px;
+  background-color: #FFF;
+}
+#main-container #form-container #form-box #login-form {
+  margin-top: 20px;
+}
+#main-container #form-container #form-box #login-form input {
+  display: block;
+  font-size: 12px;
+  padding: 12px 9px;
+  background-color: #FAFAFA;
+  border: solid 1px #DBDBDB;
+  border-radius: 3px;
+  width: 268px;
+  margin: 5px auto;
+}
+#main-container #form-container #form-box #login-form input[type=submit] {
+  background-color: #B2DFFC;
+  color: #FFF;
+  margin-top: 15px;
+  border-radius: 5px;
+  height: 30px;
+  border-color: #B2DFFC;
+  font-size: 13px;
+  padding: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+#main-container #form-container #form-box .separator {
+  position: relative;
+}
+#main-container #form-container #form-box .separator .line {
+  border-top: solid 1px #DBDBDB;
+  width: 268px;
+  margin: 25px auto 35px;
+}
+#main-container #form-container #form-box .separator span {
+  position: absolute;
+  text-transform: uppercase;
+  color: #BBB;
+  width: 50px;
+  top: -6px;
+  left: 50%;
+  margin-left: -25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#main-container #form-container #form-box #other-links #facebook-login {
+  margin-bottom: 25px;
+}
+#main-container #form-container #form-box #other-links #facebook-login a {
+  text-decoration: none;
+  color: #385185;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main-container #form-container #form-box #other-links #facebook-login a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+#main-container #form-container #form-box #other-links #facebook-login a span {
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 1px;
+}
+#main-container #form-container #form-box #other-links #forgot-pass {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+#main-container #form-container #form-box #other-links #forgot-pass a {
+  text-decoration: none;
+  color: #373799;
+}
 
 /*# sourceMappingURL=styles.css.map */
