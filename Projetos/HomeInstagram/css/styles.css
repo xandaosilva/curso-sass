@@ -121,5 +121,20 @@
   font-weight: bold;
   text-decoration: none;
 }
+#main-container #form-container #get-app-container {
+  text-align: center;
+  width: 350px;
+}
+#main-container #form-container #get-app-container p {
+  margin: 20px 0;
+  font-size: 13px;
+}
+#main-container #form-container #get-app-container a {
+  text-decoration: none;
+}
+#main-container #form-container #get-app-container a img {
+  width: 136px;
+  height: 40px;
+}
 
 /*# sourceMappingURL=styles.css.map */
