@@ -18,4 +18,12 @@ body ul {
   list-style: none;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=styles.css.map */

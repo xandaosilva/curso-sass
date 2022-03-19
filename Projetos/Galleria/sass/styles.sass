@@ -1,3 +1,11 @@
 @use 'resets'
 @use 'variables'
+@use 'mixins'
 
+.header
+    display: flex
+    justify-content: space-between
+    @include mixins.container
+
+    &-brand
+        
